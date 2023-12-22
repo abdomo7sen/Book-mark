@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+hr{
+    border-top: 3px dotted black;
+}
+body{
+    font-family: 'Pacifico', cursive;
+font-family: 'PT Sans Caption', sans-serif;
+font-family: 'Righteous', sans-serif;
+    background-color: #F7ECDE;
+}
+header h1 ,h2 ,#subBtn{
+    text-align: center;
+    /* position: relative; */
+    /* background-color: blue; */
+}
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    position: relative;
+    /* background-color: aqua; */
+    transition: all 1s;
+}
+header h1::after{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    bottom: 10px;
+    z-index: -1;
+    transition: all 1s;
+    
+    /* right: 0; */
+    left: 0;
+    background-color: #FEC260;
+    transform: translate(150%);
+}
+header h1:hover::after {
+    /* background-color: black; */
+    height: 50%;
+}
+
+.multicolortext {
+    background-image: linear-gradient(to right, green, #B2AC4A);
+    
+    background-clip: text;
+    color: transparent;
+  }
+
+h2{
+    font-size: 25px;
+    font-family: 'Pacifico', cursive;
+font-family: 'Righteous', sans-serif;
+}
+
+.Data #subBtn{
+    background-color: #BB4120;
+    color: white;
+    padding: 10px 40px;
+    margin-left:45%;
+    margin-top: 10px;
+}
+
+#visitBtn{
+    background-color: #8A9E23;
+    color: white;
+}
+#deleteBtn{
+    background-color: #D30820;
+    color: white;
+}
+
+.alertbox{
+
+    z-index: 10;
+}
+#closeBtn{
+    margin-left:500px ;
+}
+
